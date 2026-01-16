@@ -4,13 +4,13 @@ import pyperclip
 import time
 pyautogui.PAUSE=0.6
 def adiciona_complemento(item, descricao,preco='0'):
-    pyautogui.click(1270,432)
+    pyautogui.click(1351,464)
     time.sleep(3)
-    pyautogui.click(1391,527)
-    pyautogui.click(1284,437)
+    pyautogui.click(1383,558)
+    pyautogui.click(1390,453)
     time.sleep(1)
     pyautogui.click(1384,621)
-    pyautogui.moveTo(1444, 650, duration=0.3)  # move lentamente
+    pyautogui.moveTo(1309, 598, duration=0.3)  # move lentamente
     pyautogui.click()
     pyperclip.copy(item)
     time.sleep(1)
@@ -35,16 +35,18 @@ def adiciona_complemento(item, descricao,preco='0'):
         pyautogui.press('enter')
 
 
-with open('pizza.txt', 'r', encoding='utf-8') as arquivo:
+with open('complemento.txt', 'r', encoding='utf-8') as arquivo:
     linhas = arquivo.readlines()
 
 for i, linha in enumerate(linhas, start=1):
     #item = "Adicional "+linha.strip()
-    #preco = '790'                        
+                        
     linha = linha.split('|')
-    item  = "1/2 Pizza "+linha[0].strip()
-    descricao = linha[1].strip()
-    adiciona_complemento(item, descricao) 
+    preco = linha[1].strip()  
+    item  = "Adicional "+linha[0].strip()
+    #descricao = linha[1].strip()
+    descricao = "Foto Ilustrativa"
+    adiciona_complemento(item, descricao,preco) 
 
 pyautogui.alert("Pronto")
 

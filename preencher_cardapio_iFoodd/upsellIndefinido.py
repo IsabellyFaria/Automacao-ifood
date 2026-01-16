@@ -5,16 +5,16 @@ import pyperclip
 import mouse
 import math
 #Variaveis
-x0 = 1661
-y0 = 522
-x1 = 1671
-y1 = 604
-x2 = 1662
+x0 = 1664
+y0 = 567
+x1 = 1656
+y1 = 631
+x2 = 1665
 y2 = 653
-x3 = 1661
-y3 = 644
-xN = 1658
-yN = 655
+x3 = 1665
+y3 = 647
+xN = 1670
+yN = 649
 
 # pausa automática de 0.5s após cada ação do pyautogui
 pyautogui.PAUSE = 0.45  
@@ -33,7 +33,7 @@ def horario():
     pyautogui.moveTo(1833,970,0.1)
     pyautogui.click()
 def esperaNome():
-    pyautogui.click(1116,550)
+    pyautogui.click(868,517)
     pyautogui.hotkey("ctrl", "a")
     pyautogui.hotkey("ctrl", "c")
     decricao = pyperclip.paste()
@@ -44,53 +44,56 @@ def executar(categoria,valorAdd):
     time.sleep(4)
     esperaNome()
     print(categoria)
-    if categoria != "" and valorAdd == 0:
+    if categoria != "":
         pyautogui.click(868,517)
         pyautogui.hotkey("ctrl", "a")
         pyautogui.hotkey("ctrl", "c")
         texto = pyperclip.paste()
         if "-" in texto:
             if  "Coca" not in texto:
-                #partes = texto.split("-", 1)
-                partes = texto.split("-")
-                esquerda = partes[0].strip()
-                direita = partes[1].strip()
-                #novo_texto = esquerda+" Lanche "+direita+" "+categoria
-                # Adiciona uma palavra antes do "-"
-                esquerda_modificada = esquerda +' '+ categoria
-            
-                # Junta de novo
-                novo_texto = esquerda_modificada + " - " + direita# Altera nome da categoria do Produto
-            else:
-                #partes = texto.split("-", 1)
-                partes = texto.split("Pizza")
-                if len(partes) == 2:
-                    esquerda = partes[0].strip()+" "
-                    direita = partes[1].strip()
+                if "+" in texto:
+                    partes = [p.strip() for p in texto.split("+")]
+                    partes[0] = partes[0] + " " + categoria
+                    novo_texto = " + ".join(partes)
                 else:
-                    esquerda = ""
-                    direita = partes[0].strip()
-                # Junta de novo
-                novo_texto = esquerda + "Pizza "+categoria+" " + direita# Altera nome da categoria do Produto
+                    #partes = texto.split("-", 1)
+                    partes = texto.split("-")
+                    esquerda = partes[0].strip()
+                    direita = partes[1].strip()
+                    #novo_texto = esquerda+" Lanche "+direita+" "+categoria
+                    # Adiciona uma palavra antes do "-"
+                    esquerda_modificada = esquerda +' '+ categoria
+                
+                    # Junta de novo
+                    novo_texto = esquerda_modificada + " - " + direita# Altera nome da categoria do Produto
+            else:
+                if "+" in texto:
+                    partes = [p.strip() for p in texto.split("+")]
+                    partes[0] = partes[0] + " " + categoria
+                    novo_texto = " + ".join(partes)
         else:
-            if "Marmita" in texto:
+            if "+" in texto:
+                partes = [p.strip() for p in texto.split("+")]
+                partes[0] = partes[0] + " " + categoria
+                novo_texto = " + ".join(partes)
+            elif "Marmita" in texto:
                 print("Marmita")
                 partes = texto.split("Marmita")
                 print(partes)
-                novo_texto = categoria+partes[1]
+                novo_texto = partes[0]+" "+categoria+partes[1]
                 print(novo_texto)
             else:
                 print("else")
                 novo_texto =categoria+" "+texto
         pyperclip.copy(novo_texto)
         pyautogui.hotkey("ctrl", "v")
-    if valorAdd != 0 or categoria == "":
+    if valorAdd != 0:
         # Abre aba 'Disponivel em'
         pyautogui.click(947,378)
         time.sleep(1)
         #horario()
         #Descobre precos
-        pyautogui.click(1080,688)
+        pyautogui.click(1063,660)
         pyautogui.hotkey("ctrl", "a")
         pyautogui.hotkey("ctrl", "c")
         precoDesconto = math.floor(float((pyperclip.paste()).replace(',','.'))+valorAdd)+0.9
@@ -98,7 +101,7 @@ def executar(categoria,valorAdd):
         precoDesconto=str(precoDesconto).replace('.','')+"0"
         precoOriginal = str(precoOriginal).replace('.','')+"0"
         # Abre aba para trocar preço e desconto
-        pyautogui.moveTo(1130,689,0.1)
+        pyautogui.moveTo(1131,660,0.1)
         pyautogui.doubleClick()
         
         # Clica 2 vezes no preço
@@ -137,8 +140,7 @@ def defineCoordenadaAlmodega(i):
     
 def executaVarias(qtd,i,categoria,valorAdd):
     for j in range(i,qtd):
-        if j > 22:
-            time.sleep(5)
+        
         coordenada = defineCoordenadaAlmodega(j)
         esperaCarregar(coordenada[1])
         pyautogui.click(coordenada[0],coordenada[1])
