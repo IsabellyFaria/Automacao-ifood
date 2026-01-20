@@ -1,7 +1,8 @@
-#O arquivo contem o conjunto de funções que estrutura a criação de um adicional com a automação, de forma que possa ser utilizado modularmente. Favor, não colocar coordenadas neste arquivo, apenas recebe-las do 'registrarCoordenada.py'
-#Isabelly Faria - 19/01/2026
-def criarNovoGrupo(nome='Grupo de Adicionais')
-
+"""O arquivo contem o conjunto de funções que estrutura a criação de um adicional com a automação.
+* Favor, não colocar coordenadas neste arquivo, apenas recebe-las do 'registrarCoordenada.py' 
+Isabelly Faria - 19/01/2026 ´´´"""
+def criarNovoGrupo(nome='Grupo de Adicionais'):
+    
 def clickarNovoComplemento():
     #clica em novo complemento
     pyautogui.click(1351,464,0.1)
