@@ -1,2 +1,38 @@
-Chicken | Frango Crocante, queijo cheddar fatiado, molho Billy Jack, alface e tomate | 35.9
-Chicken Brutus Bacon | Frango crocante, queijo cheddar fatiado, bacon, Catupiry, molho Billy Jack, alface e  tomate | 37.9
+Calabresa Cremosa | Calabresa, mussarela, Catupiry, cheddar cremoso e cebola.
+Galetos | Frango, presunto, milho, Catupiry, ovo, cebola, tomate, bacon e orégano.
+Dú Patrão | Mussarela, presunto, calabresa, cebola e orégano.
+Frango Especial | Mussarela, frango, Catupiry, cheddar, bacon e orégano.
+Portuguesa Cremosa | Mussarela, presunto, ervilha, ovo, Catupiry, cheddar, cebola e pimentão.
+Americana | Mussarela, bacon, tomate, cebola, ovo e orégano.
+Frango com Cream Cheese | Mussarela, frango, cream cheese e orégano.
+Calabresa | Calabresa, mussarela, cebola e orégano.
+Portuguesa | Mussarela, presunto, ovo, ervilha e cebola.
+Calabresa com Cream Cheese | Mussarela, calabresa coberta com cream cheese e orégano.
+A Moda da Casa | Mussarela, frango, bacon, calabresa, presunto, ovo, ervilha, orégano e cebola.
+Bacon Supremo | Mussarela e bacon.
+Frango com Catupiry | Mussarela, frango e Catupiry.
+Toscana | Mussarela, calabresa, bacon e queijo parmesão.
+Baiana | Mussarela, calabresa, ovos, cebola e pimenta.
+Portuguesa Especial | Mussarela, presunto, milho, palmito, ervilha, ovo, bacon e cebola.
+Marguerita | Mussarela, tomate, queijo parmesão e manjericão.
+Suprema | Mussarela, cream cheese, frango e bacon.
+Suprema G | Mussarela, cream cheese, frango e bacon (versão gourmet).
+Frango com Mussarela | Frango, mussarela e orégano.
+Vegetariana | Mussarela, palmito, ervilha, milho, cebola e tomate fatiado. 
+Bauru | Mussarela, presunto, tomate e orégano.
+Frango com Cheddar | Mussarela, frango e cheddar.
+Lombo | Mussarela e lombo.
+Lombo ao Barbecue | Lombo canadense, mussarela, bacon e molho barbecue.
+Baiacatu | Calabresa moída, Catupiry e cebola.
+Mista | Frango, mussarela, presunto e orégano.
+Canadense |  Mussarela, lombo canadense, bacon, cebola e Catupiry.
+Atum | Mussarela, atum, cebola e orégano.
+Filadélfia | Lombo, mussarela, cream cheese, cebola, bacon e orégano.
+Frango Bacon | Frango, mussarela e bacon.
+Mexicana (Borda de Cheddar) | Mussarela derretida, cheddar Original cremoso, chips Doritos e orégano.
+Galetos com Catupiry | Frango, presunto, milho, Catupiry, ovo, cebola, tomate, bacon e orégano.
+Prestígio | Mussarela, chocolate, coco ralado e leite condensado.
+Kit Kat | Mussarela, chocolate, Kitkat e leite condensado.
+Morango com Chocolate | Mussarela, muito chocolate, morango e leite condensado.
+Brigadeiro | Mussarela, chocolate e granulado.
+M&M's | Mussarela, chocolate e M&M's

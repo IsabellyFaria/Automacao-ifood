@@ -13,8 +13,8 @@ x2 = 1665
 y2 = 653
 x3 = 1665
 y3 = 647
-xN = 1670
-yN = 649
+xN = 1661
+yN = 700
 
 # pausa automática de 0.5s após cada ação do pyautogui
 pyautogui.PAUSE = 0.45  
@@ -90,10 +90,10 @@ def executar(categoria,valorAdd):
     if valorAdd != 0:
         # Abre aba 'Disponivel em'
         pyautogui.click(947,378)
-        time.sleep(1)
+        time.sleep(2)
         #horario()
         #Descobre precos
-        pyautogui.click(1063,660)
+        pyautogui.click(1063,688)
         pyautogui.hotkey("ctrl", "a")
         pyautogui.hotkey("ctrl", "c")
         precoDesconto = math.floor(float((pyperclip.paste()).replace(',','.'))+valorAdd)+0.9
@@ -101,7 +101,7 @@ def executar(categoria,valorAdd):
         precoDesconto=str(precoDesconto).replace('.','')+"0"
         precoOriginal = str(precoOriginal).replace('.','')+"0"
         # Abre aba para trocar preço e desconto
-        pyautogui.moveTo(1131,660,0.1)
+        pyautogui.moveTo(1131,689,0.1)
         pyautogui.doubleClick()
         
         # Clica 2 vezes no preço
