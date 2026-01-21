@@ -1,47 +1,53 @@
 """O arquivo contem o conjunto de funções que estrutura a criação de um adicional com a automação.
 * Favor, não colocar coordenadas neste arquivo, apenas recebe-las do 'registrarCoordenada.py' 
 Isabelly Faria - 19/01/2026 ´´´"""
-def criarNovoGrupo(nome='Grupo de Adicionais'):
-    
+import atalhosPyautogui
+def criarNovoGrupo(nome='Grupo de Adicionais',min=0,max=1):
+    '''
+    clickar no botão de novo grupo
+    clickar criar grupo
+    clickar continuar
+    clickar ingredietes
+    clickar continuar
+    clickar campo nome
+    preencher
+    escolher quantidade
+    clickar continuar
+    '''
+
+def finalizarGrupo():
+    #clickar no botão de concluir
 def clickarNovoComplemento():
-    #clica em novo complemento
-    pyautogui.click(1351,464,0.1)
+    #clicka em novo complemento
+    atalhosPyautogui.clickar(1351,464)
     time.sleep(3)
     #seleciona o tipo 'ingrediente'
-    pyautogui.click(1383,558,0.1)
-    pyautogui.click(1390,453,0.1)
+    atalhosPyautogui.clickar(1383,558)
+    atalhosPyautogui.clickar(1390,453)
     time.sleep(1)
 
 def adicionarNome(nome_produto):
     #Clica no campo de nome e realiza movimento
-    pyautogui.click(1384,621)
-    pyautogui.moveTo(1309, 598, duration=0.3)  # move lentamente
-    pyautogui.click()
+    atalhosPyautogui.clickar(1384,621)
     #copia o nome
     pyperclip.copy(nome_produto)
     time.sleep(1)
     print(pyperclip.paste())
     time.sleep(0.5)
-    pyautogui.hotkey("ctrl", "v")
+    atalhosPyautogui.colar(1309, 598)
 
 def adicionarDescricao(descricao_produto):
     #necessário pegar coordenada Correta
-    pyautogui.press('tab')
     pyperclip.copy(descricao_produto)
     time.sleep(0.5)
-    pyautogui.hotkey("ctrl", "v")
+    atalhosPyautogui.colar(FALTA_X, FALTA_Y)
 
 def adicionarPreco(preco_produto):
     #preciso pegar coordenada
-    pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.typewrite(preco_produto)
-        for i in range(2):
-            pyautogui.press('tab')
-        pyautogui.press('enter')
-
+    pyautogui.scroll(-300)
+    pyperclip.copy(preco_produto)
+    time.sleep(0.5)
+    atalhosPyautogui.colar(FALTA_X, FALTA_Y)
 def finalizarProduto():
     #preciso pegar coordenada
-    for i in range(2):
-            pyautogui.press('tab')
-        pyautogui.press('enter')
+    

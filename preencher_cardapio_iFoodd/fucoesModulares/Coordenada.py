@@ -1,11 +1,33 @@
-""" Esse arquivo contém a classe que rege o comportamento das coordenadas, bem como a função para definir uma nova coordenada
-Isabelly Faria 20/01/2026 """
+""" Esse arquivo contém
+* classe que rege o comportamento das coordenadas
+* leitura e escrita de coordenadas pré-existentes
+Isabelly Faria 21/01/2026 """
+import json
 class Coordenada:
     def __init__(xNovo,yNovo):
         self.x = xNovo
         self.y = yNovo
     def getXY():
-        return [this.x,this.y]
+        return [self.x,self.y]
     def setXY(xNovo,yNovo):
         self.x = xNovo
         self.y = yNovo
+def carregarCoordenadas():
+    with open("coordenadas.json", "r", encoding="utf-8") as f:
+        dados = json.load(f)
+
+    coords = {}
+    for nome, valor in dados.items():
+        coords[nome] = Coordenada(valor["x"], valor["y"])
+
+    return coords
+def salvar_coordenadas(coords):
+    dados = {}
+    for nome, coord in coords.items():
+        dados[nome] = {
+            "x": coord.x,
+            "y": coord.y
+        }
+
+    with open("coordenadas.json", "w", encoding="utf-8") as f:
+        json.dump(dados, f, indent=2)
