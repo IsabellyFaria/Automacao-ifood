@@ -1,10 +1,98 @@
 {
-  "campo_email": {
-    "x": 412,
-    "y": 328
+    "btn_adicionarGrupo_produto": {
+    "x": 1302,
+    "y": 493
   },
-  "campo_senha": {
-    "x": 415,
-    "y": 365
-  }
+  "btn_criarNovoGrupo_complemento": {
+    "x": 1380,
+    "y": 325
+  },
+  "btn_continuar":{
+    "x": 1821,
+    "y": 976
+  },
+  "btn_ingredientes_complemento":{
+    "x": 1400,
+    "y": 403
+  },
+  "campo_nomeGrupo_complemento":{
+    "x": 1373, 
+    "y": 411
+  },
+  "campo_qtdMinima_complemento":{
+    "x": 1689, 
+    "y": 512
+  },
+  "campo_qtdMaxima_complemento":{
+    "x": 1867, 
+    "y": 516
+  },
+  "btn_criarNovoComplemento_complemento":{
+    "x":1348,
+    "y":447
+  },
+  "btn_selecionarTipo_complemento":{
+    "x":1333,
+    "y":514
+  },
+  "btn_preparado_complemento":{
+    "x":1339,
+    "y": 417
+  },
+  "campo_nome_complemento":{
+    "x":1339,
+    "y": 603
+  },
+  "campo_descricao_complemento":{
+    "x":1380,
+    "y":794
+  },
+  "campo_preco_complemento":{
+    "x":1558,
+    "y":783
+  },
+  "btn_adicionarAoGrupo_complemento":{
+    "x":1766,
+    "y":872
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
+  "":{
+    "x":,
+    "y":
+  },
 }

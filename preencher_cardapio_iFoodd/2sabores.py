@@ -35,18 +35,18 @@ def adiciona_complemento(item, descricao,preco='0'):
         pyautogui.press('enter')
 
 
-with open('complemento.txt', 'r', encoding='utf-8') as arquivo:
+with open('pizza.txt', 'r', encoding='utf-8') as arquivo:
     linhas = arquivo.readlines()
 
 for i, linha in enumerate(linhas, start=1):
     #item = "Adicional "+linha.strip()
                         
     linha = linha.split('|')
-    preco = linha[1].strip()  
-    item  = "Adicional "+linha[0].strip()
+    #preco = linha[1].strip()  
+    item  = "1/2 Pizza "+linha[0].strip()
     #descricao = linha[1].strip()
-    descricao = "Foto Ilustrativa"
-    adiciona_complemento(item, descricao,preco) 
+    descricao = linha[1].strip()+" Foto Ilustrativa"
+    adiciona_complemento(item, descricao) 
 
 pyautogui.alert("Pronto")
 

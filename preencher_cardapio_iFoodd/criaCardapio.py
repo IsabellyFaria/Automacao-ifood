@@ -91,16 +91,16 @@ def criaCardapio():
     print("Iniciando")
     for i, linha in enumerate(linhas, start=1):
         nome, descricao = linha.strip().split('|')
-        descricao = descricao.strip() +" Acompanha Guaraná 1,5l. Foto Ilustrativa"
+        descricao = descricao.strip() +" Acompanha Guaraná Antarctica 1,5l. Foto Ilustrativa"
         # Corrige valores
         #desconto_valor = float(desconto_txt) / 100      # 6390 → 63.90
         #desconto_valor += 13.00                         # soma R$15,00
         #preco_valor = desconto_valor * 2                # preço é o dobro
         #desconto_valor = math.floor(float(preco)*1.30)+0.9 
         #preco_valor = math.floor(desconto_valor/0.5)+0.9
-        desconto_valor = 39.9+12
+        desconto_valor = 59.9+15
         preco_valor = math.floor(desconto_valor/0.5)+0.9
-        item = f"Combo Pizza {nome.strip()} Broto + Guaraná 1,5l"
+        item = f"Combo Pizza {nome.strip()} Média + Guaraná Antarctica 1,5l"
 
         adiciona_item(
             item,
