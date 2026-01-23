@@ -180,38 +180,50 @@ def pagina_preco():
 
 # Página Upsell
 def pagina_upsell_definido():
-    tk.Label(frame_conteudo, text="Página de UpSell", font=("Arial", 16)).pack(pady=20)
+    tk.Label(frame_conteudo, text="Página de UpSell (Preço Definido)", font=("Arial", 16)).pack(pady=20)
+
     tk.Label(frame_conteudo, text="Nome da categoria:").pack()
     entrada_categoria = tk.Entry(frame_conteudo)
     entrada_categoria.pack()
-    tk.Label(frame_conteudo, text="Preço original:").pack()
-    entrada_original = tk.Entry(frame_conteudo)
-    entrada_original.pack()
-    tk.Label(frame_conteudo, text="Preço com Desconto:").pack()
-    entrada_desconto = tk.Entry(frame_conteudo)
-    entrada_desconto.pack()
+
+    tk.Label(frame_conteudo, text="Preço base (ex: 44.9):").pack()
+    entrada_base = tk.Entry(frame_conteudo)
+    entrada_base.pack()
+
     tk.Label(frame_conteudo, text="Quantidade de produtos:").pack()
     entrada_qtd = tk.Entry(frame_conteudo)
     entrada_qtd.pack()
+
     tk.Label(frame_conteudo, text="A partir de qual item:").pack()
     entrada_i = tk.Entry(frame_conteudo)
     entrada_i.pack()
 
     def salvar():
-        categoria = entrada_categoria.get()
-        precoOriginal = entrada_original.get()
-        precoDesconto = entrada_desconto.get()
-        qtd = int(entrada_qtd.get())
-        i = int(entrada_i.get())-1
-        upsellDefinido.executaVarias(qtd,i,categoria,precoOriginal,precoDesconto)
+        try:
+            categoria = entrada_categoria.get()
+            valor_base = float(entrada_base.get())
+            qtd = int(entrada_qtd.get())
+            i = int(entrada_i.get()) - 1
 
-    tk.Button(frame_conteudo, text="Salvar", command=salvar).pack(pady=5)
+            upsellDefinido.executaVarias(
+                qtd,
+                i,
+                categoria,
+                valor_base
+            )
+
+            messagebox.showinfo("Sucesso", "Upsell definido executado com sucesso!")
+
+        except ValueError:
+            messagebox.showerror("Erro", "Verifique os valores inseridos.")
+
+    tk.Button(frame_conteudo, text="Executar", command=salvar).pack(pady=10)
 def pagina_upsell_indefinido():
     tk.Label(frame_conteudo, text="Página de UpSell", font=("Arial", 16)).pack(pady=20)
     tk.Label(frame_conteudo, text="Nome da categoria:").pack()
     entrada_categoria = tk.Entry(frame_conteudo)
     entrada_categoria.pack()
-    tk.Label(frame_conteudo, text="Porcentagem do upsell:").pack()
+    tk.Label(frame_conteudo, text="Valor Somado:").pack()
     entrada_upsell = tk.Entry(frame_conteudo)
     entrada_upsell.pack()
     tk.Label(frame_conteudo, text="Quantidade de produtos:").pack()

@@ -65,7 +65,7 @@ def adiciona_item(item, descricao, preco, desconto):
 
     # Abre preço
     time.sleep(2)
-    pyautogui.moveTo(1250, 709, duration=0.1)
+    pyautogui.moveTo(1245, 712, duration=0.1)
     pyautogui.click()
 
     # Coloca preço e desconto
@@ -98,9 +98,9 @@ def criaCardapio():
         #preco_valor = desconto_valor * 2                # preço é o dobro
         #desconto_valor = math.floor(float(preco)*1.30)+0.9 
         #preco_valor = math.floor(desconto_valor/0.5)+0.9
-        desconto_valor = 59.9+15
+        desconto_valor = 69.9+15
         preco_valor = math.floor(desconto_valor/0.5)+0.9
-        item = f"Combo Pizza {nome.strip()} Média + Guaraná Antarctica 1,5l"
+        item = f"Combo Pizza {nome.strip()} Grande + Guaraná Antarctica 1,5l"
 
         adiciona_item(
             item,

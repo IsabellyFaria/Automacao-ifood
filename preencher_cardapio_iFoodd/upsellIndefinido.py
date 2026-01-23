@@ -7,24 +7,42 @@ import math
 #Variaveis
 x0 = 1664
 y0 = 567
-x1 = 1656
-y1 = 631
-x2 = 1665
-y2 = 653
+x1 = 1666
+y1 = 635
+x2 = 1669
+y2 = 704
 x3 = 1665
-y3 = 647
-xN = 1661
+y3 = 703
+xN = 1669
 yN = 700
+yNormal = 655
 
 # pausa automática de 0.5s após cada ação do pyautogui
 pyautogui.PAUSE = 0.45  
-def esperaCarregar(y):
-    pyautogui.doubleClick(1543,y)
+def normaliza_preco(texto):
+    return texto.replace('\n', '').replace('\xa0', ' ').strip()
+def esperaCarregar(y, tentativa=0, max_tentativas=5):
+    pyautogui.doubleClick(1543, y)
     pyautogui.hotkey("ctrl", "c")
-    preco = pyperclip.paste()
-    if len(preco)> 9 or "," not in preco:
+    
+    preco = normaliza_preco(pyperclip.paste())
+    print(f"[Tentativa {tentativa}] Preço lido:", repr(preco))
+
+    # Caso especial: preço com R$
+    if preco.startswith("R$"):
+        print("→ Preço com R$, usando yNormal")
+        time.sleep(2)
+        return esperaCarregar(yNormal, tentativa + 1)
+
+    # Caso inválido / não carregou
+    if "," not in preco or len(preco) > 9:
+        if tentativa >= max_tentativas:
+            print("⚠ Máx. tentativas atingidas, usando y original")
+            return y
         time.sleep(5)
-        esperaCarregar(y)
+        return esperaCarregar(y, tentativa + 1)
+
+    return y
 def horario():
     pyautogui.moveTo(713,680,0.1)
     pyautogui.click()
@@ -142,7 +160,8 @@ def executaVarias(qtd,i,categoria,valorAdd):
     for j in range(i,qtd):
         
         coordenada = defineCoordenadaAlmodega(j)
-        esperaCarregar(coordenada[1])
+        time.sleep(3)
+        coordenada[1] = esperaCarregar(coordenada[1])
         pyautogui.click(coordenada[0],coordenada[1])
         pyautogui.press('tab')
         pyautogui.press('enter')
