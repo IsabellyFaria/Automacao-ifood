@@ -65,7 +65,7 @@ def adiciona_item(item, descricao, preco, desconto):
 
     # Abre preço
     time.sleep(2)
-    pyautogui.moveTo(1245, 712, duration=0.1)
+    pyautogui.moveTo(1236, 708, duration=0.1)
     pyautogui.click()
 
     # Coloca preço e desconto
@@ -81,7 +81,7 @@ def adiciona_item(item, descricao, preco, desconto):
     # Salvar
     pyautogui.moveTo(1817, 994, duration=0.1)
     pyautogui.click()
-    time.sleep(14)
+    time.sleep(30)
 
 def criaCardapio():
     pyautogui.hotkey("alt","tab")
@@ -90,17 +90,15 @@ def criaCardapio():
 
     print("Iniciando")
     for i, linha in enumerate(linhas, start=1):
-        nome, descricao = linha.strip().split('|')
-        descricao = descricao.strip() +" Acompanha Guaraná Antarctica 1,5l. Foto Ilustrativa"
+        nome, descricao, preco = linha.strip().split('|')
+        descricao = descricao.strip() +". Acompanha Guaraná Antarctica 2l. Foto Ilustrativa"
         # Corrige valores
         #desconto_valor = float(desconto_txt) / 100      # 6390 → 63.90
         #desconto_valor += 13.00                         # soma R$15,00
         #preco_valor = desconto_valor * 2                # preço é o dobro
-        #desconto_valor = math.floor(float(preco)*1.30)+0.9 
-        #preco_valor = math.floor(desconto_valor/0.5)+0.9
-        desconto_valor = 69.9+15
+        desconto_valor = math.floor((float(preco)*1.25)+14.90)+0.9 
         preco_valor = math.floor(desconto_valor/0.5)+0.9
-        item = f"Combo Pizza {nome.strip()} Grande + Guaraná Antarctica 1,5l"
+        item = f"Pizza {nome.strip()} Grande 8 Pedaços + Guaraná Antarctica 2l"
 
         adiciona_item(
             item,

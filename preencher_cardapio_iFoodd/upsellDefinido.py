@@ -44,27 +44,24 @@ def normaliza_preco(texto):
 
 
 def esperaCarregar(y, tentativa=0, max_tentativas=5):
-    pyautogui.doubleClick(1543, y)
+    # alterna o Y a cada 2 tentativas
+    y_atual = y if (tentativa // 2) % 2 == 0 else yNormal
+
+    pyautogui.doubleClick(1543, y_atual)
     pyautogui.hotkey("ctrl", "c")
 
     preco = normaliza_preco(pyperclip.paste())
-    print(f"[Tentativa {tentativa}] Preço lido:", repr(preco))
+    print(f"[Tentativa {tentativa}] y={y_atual} | Preço lido:", repr(preco))
 
-    if preco.startswith("R$"):
-        print("→ Preço com R$, usando yNormal")
-        time.sleep(2)
-        return esperaCarregar(yNormal, tentativa + 1)
+    if "," in preco and len(preco) <= 9 and not preco.startswith("R$"):
+        return y_atual
 
-    if "," not in preco or len(preco) > 9:
-        if tentativa >= max_tentativas:
-            print("⚠ Máx. tentativas atingidas, usando y original")
-            return y
-        time.sleep(5)
-        return esperaCarregar(y, tentativa + 1)
+    if tentativa >= max_tentativas:
+        print("⚠ Máx. tentativas atingidas, retornando último y usado")
+        return y_atual
 
-    return y
-
-
+    time.sleep(3)
+    return esperaCarregar(y, tentativa + 1, max_tentativas)
 def esperaNome():
     pyautogui.click(868, 517)
     pyautogui.hotkey("ctrl", "a")
@@ -135,7 +132,7 @@ def executar(categoria, valor_base):
         pyautogui.click(1810, 985)
 
     pyautogui.click(1803, 985)
-    time.sleep(11)
+    time.sleep(17)
 
 
 # ===============================

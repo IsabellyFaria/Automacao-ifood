@@ -1,9 +1,17 @@
-Água Com Gás 500ml | 550
-Água Natural 500ml | 550
-Refrigerante Coca-Cola 2l | 1700
-Refrigerante Coca-Cola 1l | 1300
-Refrigerante Coca-Cola 350ml | 750
-Refrigerante Coca-Cola Zero 350ml | 600
-Refrigerante Fanta Laranja 350ml | 750
-Refrigerante Fanta Uva 350ml | 750
-Refrigerante Guaraná Antárctica 1l | 1300
+Leite Condensado | | 5
+Leite em Pó | | 5
+Confete | | 5
+Banana | | 5
+Coco | | 5
+Calda de Morango | | 5
+Chocoball| | 5
+Paçoca | | 5
+Granola | | 5
+Calda de Chocolate | | 5
+Prestígio | | 5
+Ovomaltine  | | 5.5
+Sonho de Valsa | |  5.5
+Chocolate Preto | |  5.5
+Morango | |  5.5
+Mousse Morango| |  5.5
+Mousse Maracujá | |  5.5

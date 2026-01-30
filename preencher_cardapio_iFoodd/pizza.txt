@@ -1,45 +1,20 @@
-À Moda da Casa | Molho, presunto, frango, calabresa, ovos, bacon, milho, cebola, mussarela, tomate, azeitonas e orégano.
-Americana | Molho, frango, mussarela, azeitonas e orégano.
-Atum | Molho, atum, mussarela, cebola, tomate, azeitonas e orégano.
-Brócolis | Molho, brócolis, bacon, mussarela, azeitonas e orégano.
-Calabresa | Molho, calabresa, cebola, azeitonas e orégano.
-Calafrango | Molho, frango, calabresa, mussarela, azeitonas e orégano.
-Catupiry ao Alho | Molho, alho frito, Catupiry Original, tomate, azeitonas e orégano.
-Frango Catupiry | Molho, frango, Catupiry Original, azeitonas e orégano.
-Luanda | Molho, mussarela, presunto, Catupiry Original, azeitonas e orégano.
-Mussarela | Molho, mussarela, azeitonas e orégano.
-Napolitana | Molho, mussarela, tomate, parmesão, azeitonas e orégano.
-Mista | Molho, presunto, mussarela, azeitonas e orégano
-Palmito | Molho, mussarela, palmito, azeitonas e orégano.
-Italiana | Molho, presunto, champignon, mussarela, azeitonas e orégano.
-4 Queijos | Molho, mussarela, provolone, gorgonzola, Catupiry Original, azeitonas e orégano.
-Portuguesa |  Molho, mussarela, presunto, ovos, ervilha, cebola, azeitonas e orégano.
-Toscana | Molho, presunto, ovos, bacon, Catupiry Original, azeitonas e orégano.
-Milho Verde | Molho, mussarela, milho, azeitonas e orégano.
-Marguerita | Molho, mussarela, tomate, ricota, manjericão, azeitonas e orégano.
-Escarola | Molho, escarola, mussarela, bacon, azeitonas e orégano.
-Lombo | Molho, lombo, mussarela, tomate, azeitonas e orégano.
-Canadense | Molho, lombo, Catupiry Original, tomate, azeitonas e orégano.
-Mineirinha | Molho, frango, brócolis, mussarela, tomate, azeitonas e orégano.
-Caipira | Molho, frango, milho, mussarela, tomate, azeitonas e orégano.
-Capri | Molho, frango, palmito, mussarela, azeitonas e orégano.
-Calamussa | Molho, calabresa, cebola, mussarela, azeitonas e orégano.
-Champignon | Molho, champignon, mussarela, bacon, azeitonas e orégano.
-Tomate Seco | Molho, tomate seco, mussarela, rúcula, azeitonas e orégano.
-Pepperoni | Molho, pepperoni, mussarela, azeitonas e orégano.
-2 Queijos | Molho, Catupiry Original, mussarela, azeitonas e orégano.
-Vegetariana | Molho, brócolis, milho, ervilha, palmito, mussarela, tomate, azeitonas e orégano.
-Banana | Banana, mussarela, açúcar e canela.
-Chocolate com Confete | Chocolate ao leite e confete.
-Prestígio | Chocolate ao leite e coco ralado.
-Brigadeiro | Chocolate ao leite e granulado.
-Bacon | Molho, mussarela, bacon, azeitonas e orégano.
-Alho | Molho, mussarela, alho, azeitonas e orégano.
-Calapiry | Molho, calabresa, cebola, Catupiry Original, azeitonas e orégano.
-Calabacon | Molho, calabresa, bacon, mussarela, azeitonas e orégano.
-Brasileira | Molho, presunto, calabresa, frango, milho, mussarela, azeitonas e orégano.
-Calabresa Premium | Molho, calabresa, ovo, bacon, cebola, mussarela,Catupiry Original, azeitonas e orégano.
-Chocolate com Morango | Chocolate ao leite e morango
-Chocolate com Banana | Banana, açúcar, canela e chocolate ao leite
-Sonho de Valsa | Chocolate ao leite e bombom sonho de valsa em pedaços
-Tropical | Molho, mussarela, ovo, milho, bacon, cebola, azeitonas e orégano.
+Calabresa | | 14.90
+Carne | | 14.90
+Frango | | 14.90
+Queijo | | 14.90
+Pizza | | 14.90
+Calabresa com Queijo |  |15.90
+Frango com Queijo |  |15.90
+Frango com Requeijão | | 15.90
+Frango com Catupiry Original | | 20.90
+2 Queijos | | 14.90
+4 Queijos | | 14.90
+Carne Seca | Carne seca, Catupiry Original e cheiro verde. | 26.90
+Costela | Costela, mussarela e cheiro verde. | 26.90
+Queijo com Palmito | | 17.90
+Carne com Queijo e Ovo | | 17.90
+Brócolis | | 17.90
+Portuguesa | | 18.90
+Prestígio | | 18.90
+Chocolate | | 18.90
+Beijinho | leite condensado e coco ralado. | 18.90
