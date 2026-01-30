@@ -42,11 +42,12 @@ for i, linha in enumerate(linhas, start=1):
     
                         
     linha = linha.split('|')
-    item = "Adicional "+linha[0].strip()
-    preco = f"{(math.floor((float(linha[2].strip())*1.25))+0.9):.2f}"
+    item = "Acompanhamento "+linha[0].strip()
+    preco = "0"
+    #preco = f"{(math.floor((float(linha[2].strip())*1))+0.9):.2f}"
     #item  = "1/2 Pizza "+linha[0].strip()
     #descricao = linha[1].strip()
-    descricao = linha[1].strip()+"Foto Ilustrativa"
+    descricao = linha[1].strip()+" Foto Ilustrativa."
     adiciona_complemento(item, descricao, preco) 
 
 pyautogui.alert("Pronto")

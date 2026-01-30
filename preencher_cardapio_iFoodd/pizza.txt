@@ -1,20 +1,10 @@
-Calabresa | | 14.90
-Carne | | 14.90
-Frango | | 14.90
-Queijo | | 14.90
-Pizza | | 14.90
-Calabresa com Queijo |  |15.90
-Frango com Queijo |  |15.90
-Frango com Requeijão | | 15.90
-Frango com Catupiry Original | | 20.90
-2 Queijos | | 14.90
-4 Queijos | | 14.90
-Carne Seca | Carne seca, Catupiry Original e cheiro verde. | 26.90
-Costela | Costela, mussarela e cheiro verde. | 26.90
-Queijo com Palmito | | 17.90
-Carne com Queijo e Ovo | | 17.90
-Brócolis | | 17.90
-Portuguesa | | 18.90
-Prestígio | | 18.90
-Chocolate | | 18.90
-Beijinho | leite condensado e coco ralado. | 18.90
+Porção Franguinho 500g | Porção de 500g de franguinho frito, preparado com cortes selecionados de frango, empanados na medida certa e fritos até ficarem dourados, crocantes por fora e macios por dentro. Ideal para compartilhar ou matar a fome com muito sabor. Acompanha o sabor clássico que todo mundo ama! | 59.90
+Porção Franguinho 1kg | Porção generosa de 1kg de franguinho frito, feito com cortes selecionados de frango, empanados na medida certa e fritos até ficarem bem dourados e super crocantes por fora, com interior macio e suculento. Ideal para compartilhar, servir a família ou acompanhar aquele momento especial. | 99.90 
+Porção Franguinho 300g + 1 Acompanhamento | Porção individual com 300g de franguinho frito, empanado na medida certa e frito até ficar crocante por fora e macio por dentro. Acompanha 1 acompanhamento à escolha, ideal para uma refeição prática, saborosa e na medida certa.| 54.90
+Porção Franguinho 300g + 2 Acompanhamentos | Porção de 300g de franguinho frito, feito com cortes selecionados, empanados e fritos até ficarem dourados e crocantes, acompanhado de 2 acompanhamentos à escolha. Ideal para compartilhar, serve até 2 pessoas. | 69.99
+Porção Franguinho 500g + 1 Acompanhamento | Porção com 500g de franguinho frito, feito com cortes selecionados, empanados na medida certa e fritos até ficarem dourados e crocantes por fora, mantendo o interior macio e suculento. Acompanha 1 acompanhamento à escolha, perfeita para compartilhar. 👉 Serve 2 pessoas. | 92.90
+Porção Franguinho 500g + 3 Acompanhamentos | Porção com 500g de franguinho frito, preparado com cortes selecionados de frango, empanados na medida certa e fritos até ficar bem crocante por fora e macio por dentro. Acompanha 3 acompanhamentos à escolha, ideal para compartilhar e montar uma refeição completa. 👉 Serve até 4 pessoas. | 119.90
+Porção Franguinho 1kg + 1 Acompanhamento | Porção generosa de 1kg de franguinho frito, feito com cortes selecionados, empanados na medida certa e fritos até ficarem dourados, crocantes por fora e macios por dentro. Acompanha 1 acompanhamento à escolha, ideal para compartilhar. | 130.90
+Porção Franguinho 1kg + 2  Acompanhamentos | Porção generosa de 1kg de franguinho frito, preparado com cortes selecionados, empanados na medida certa e fritos até ficarem bem crocantes e suculentos. Acompanha 2 acompanhamentos à escolha, perfeita para montar uma refeição completa. | 144.90
+Porção Franguinho 1kg + 3 Acompanhamentos | Porção generosa de 1kg de franguinho frito, empanado na medida certa e frito até ficar dourado, crocante por fora e macio por dentro. Acompanha 3 acompanhamentos à escolha, ideal para compartilhar com a família ou amigos. | 169.90
+
