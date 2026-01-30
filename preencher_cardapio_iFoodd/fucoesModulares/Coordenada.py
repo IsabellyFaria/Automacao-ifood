@@ -4,12 +4,12 @@
 Isabelly Faria 21/01/2026 """
 import json
 class Coordenada:
-    def __init__(xNovo,yNovo):
+    def __init__(self, xNovo,yNovo):
         self.x = xNovo
         self.y = yNovo
-    def getXY():
-        return [self.x,self.y]
-    def setXY(xNovo,yNovo):
+    def getXY(self):
+        return (self.x,self.y)
+    def setXY(self,xNovo,yNovo):
         self.x = xNovo
         self.y = yNovo
 def carregarCoordenadas():

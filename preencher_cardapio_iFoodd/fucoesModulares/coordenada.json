@@ -7,7 +7,7 @@
     "x": 1380,
     "y": 325
   },
-  "btn_continuar":{
+  "btn_continuar_complemento":{
     "x": 1821,
     "y": 976
   },
@@ -35,7 +35,7 @@
     "x":1333,
     "y":514
   },
-  "btn_preparado_complemento":{
+  "btn_selecionar_ingrediente":{
     "x":1339,
     "y": 417
   },
@@ -55,9 +55,9 @@
     "x":1766,
     "y":872
   },
-  "":{
-    "x":,
-    "y":
+  "btn_concluir_grupo_complemento":{
+    "x": 1821,
+    "y": 976
   },
   "":{
     "x":,
