@@ -51,3 +51,7 @@ def clickar(coordenada_click, y=None, qtd=1, btn='left', duracao=0.1, retries=1,
 def colar(coordenada_click):
     clickar(coordenada_click, duracao=0.3)
     pyautogui.hotKey('ctrl', 'v')
+
+def tab(qtd=1):
+    for _ in range(qtd):
+        pyautogui.press('tab')

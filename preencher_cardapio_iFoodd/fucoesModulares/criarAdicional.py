@@ -6,17 +6,6 @@ import atalhosPyautogui
 import Coordenada
 coordenadas = Coordenada.carregarCoordenadas()
 def criarNovoGrupo(nome='Grupo de Adicionais',min=0,max=1):
-    '''
-    clickar no botão de novo grupo
-    clickar criar grupo
-    clickar continuar
-    clickar ingredietes
-    clickar continuar
-    clickar campo nome
-    preencher
-    escolher quantidade
-    clickar continuar
-    '''
     #clicka em novo grupo
     atalhosPyautogui.clickar(coordenadas['btn_adicionarGrupo_complemento'])
     atalhosPyautogui.clickar(coordenadas['btn_criarNovoGrupo_complemento'])

@@ -83,12 +83,12 @@
     "x":1546,
     "y":650
   },
-  "":{
-    "x":,
-    "y":
+  "btn_confirmar_duplicar_lista":{
+    "x":1138,
+    "y":674
   },
-  "":{
-    "x":,
-    "y":
-  },
+  "campo_preco_lista":{
+    "x":1537,
+    "y": 0
+  }
 }
