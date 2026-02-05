@@ -90,5 +90,57 @@
   "campo_preco_lista":{
     "x":1537,
     "y": 0
+  },
+  "campo_descricao_produto": {
+    "x": 1031,
+    "y": 663
+  },
+  "campo_nome_produto": {
+    "x": 677,
+    "y": 544
+  },
+  "btn_prosseguir_produto": {
+    "x": 1840,
+    "y": 986
+  },
+  "btn_abrir_preco_produto": {
+    "x": 1236,
+    "y": 708
+  },
+  "campo_preco_produto": {
+    "x": 1289,
+    "y": 417
+  },
+  "campo_desconto_produto": {
+    "x": 1063,
+    "y": 688
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
   }
 }

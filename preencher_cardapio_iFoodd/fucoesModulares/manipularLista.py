@@ -35,7 +35,7 @@ def selecionarProdutoNaLista(posicao_produto=0,qtd_tab=1):
     time.sleep(0.1)
     atalhosPyautogui.clickar(coordenadas['btn_confirmar_duplicar_lista'])            
 
-def conferirPreco(preco_esperado="10,00",coordenada_preco_produto='campo_pesquisa_produto'):
+def conferirPreco(preco_esperado="10,00",coordenada_preco_produto='btn_3Pontos_0_lista'):
     cord_Ponto = coordenadas[coordenada_preco_produto].getXY()
     x = cord_Ponto[0]
     coord_preco = coordenadas['campo_preco_lista'].getXY()
