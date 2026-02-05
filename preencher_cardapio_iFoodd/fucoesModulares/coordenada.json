@@ -91,11 +91,11 @@
     "x":1537,
     "y": 0
   },
-  "campo_descricao_produto": {
+  "campo_descricao_criar_produto": {
     "x": 1031,
     "y": 663
   },
-  "campo_nome_produto": {
+  "campo_nome_criar_produto": {
     "x": 677,
     "y": 544
   },
@@ -103,19 +103,19 @@
     "x": 1840,
     "y": 986
   },
-  "btn_abrir_preco_produto": {
+  "texto_nome_categoria_criar_produto": {
     "x": 1236,
     "y": 708
   },
-  "campo_preco_produto": {
+  "campo_preco_criar_produto": {
     "x": 1289,
     "y": 417
   },
-  "campo_desconto_produto": {
+  "campo_desconto_criar_produto": {
     "x": 1063,
     "y": 688
   },
-  "": {
+  "texto_nome_produto": {
     "x": 0,
     "y": 0
   },
