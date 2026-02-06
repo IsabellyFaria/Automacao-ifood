@@ -10,6 +10,7 @@ import Coordenada
 import time
 import pyperclip
 coordenadas = Coordenada.carregarCoordenadas()
+
 #Função para esperar o carregamento da página e verificar se a descrição do produto está presente
 def esperarCarregamentoPagina(esperar_segundos=5,descricao_esperada="Descrição do produto",repeticao=0, acao=0):
     time.sleep(5)  # Espera 5 segundos para o carregamento da página
@@ -29,6 +30,7 @@ def esperarCarregamentoPagina(esperar_segundos=5,descricao_esperada="Descrição
             print("Não foi possivel reconhecer a descrição do produto, iremos recalibrar!")
             return False
         esperarCarregamentoPagina(esperar_segundos,descricao_esperada,repeticao + 1, acao)
+        
 def criarNomeDecricao(nome_produto,descricao_produto,preco_produto,acao=0):
     match acao:
         case 0:
@@ -37,11 +39,13 @@ def criarNomeDecricao(nome_produto,descricao_produto,preco_produto,acao=0):
             coordenada_nome = ['campo_nome_editar_produto_1','campo_descricao_editar_produto_1']
         case 2:
             coordenada_nome = ['campo_nome_editar_produto_2','campo_descricao_editar_produto_2']
+    
     #adiciona o nome do produto
     pyperclip.copy(nome_produto)
     print(pyperclip.paste())
     time.sleep(0.5)
     atalhosPyautogui.colar(coordenada_nome[0])
+    
     #adiciona a descrição do produto
     pyperclip.copy(descricao_produto)
     time.sleep(0.5)
@@ -61,9 +65,11 @@ def adicionarPreco(preco_produto,desconto_produto,acao=0,soma=0):
             coordenada_nome = ['texto_nome_categoria_editar_produto_1']
         case 2:
             coordenada_nome = ['texto_nome_categoria_editar_produto_2']
+
     #Abre a seção de preço
     time.sleep(2)
     atalhosPyautogui.clickar(coordenadas['texto_nome_categoria_criar_produto'])
+
     #Dá respectivos tabs para chegar no preço
     for _ in range(2):
         pyautogui.press('tab')
@@ -71,12 +77,26 @@ def adicionarPreco(preco_produto,desconto_produto,acao=0,soma=0):
         pyautogui.hotkey('ctrl', 'c')
         valor_copiado = pyperclip.paste()
         valor_copiado = float(valor_copiado.replace(",", "."))
-        preco_produto = 
+        preco_produto = valor_copiado + preco_produto
+        preco_produto = f"{preco_produto:.2f}".replace(".", ",")
+    elif soma == 2:
+        pyautogui.hotkey('ctrl', 'c')
+        valor_copiado = pyperclip.paste()
+        valor_copiado = float(valor_copiado.replace(",", "."))
+        preco_produto = valor_copiado * preco_produto
+        preco_produto = f"{preco_produto:.2f}".replace(".", ",")
+    else:
+        preco_produto = f"{preco_produto:.2f}".replace(".", ",")
+    pyautogui.press('tab')
+    pyautogui.press(enter)
+    if soma != 0:
+        pyautogui.press('enter')
 
     #Adiciona o preço
     pyperclip.copy(preco_produto)
     time.sleep(0.5)
     atalhosPyautogui.colar(coordenadas['campo_preco_criar_produto'])
+
     #Adiciona o desconto
     pyperclip.copy(desconto_produto)
     time.sleep(0.5)
