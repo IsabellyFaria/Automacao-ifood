@@ -10,6 +10,7 @@ import Coordenada
 import time
 import pyperclip
 coordenadas = Coordenada.carregarCoordenadas()
+#Função para esperar o carregamento da página e verificar se a descrição do produto está presente
 def esperarCarregamentoPagina(esperar_segundos=5,descricao_esperada="Descrição do produto",repeticao=0, acao=0):
     time.sleep(5)  # Espera 5 segundos para o carregamento da página
     match acao:
@@ -40,22 +41,38 @@ def criarNomeDecricao(nome_produto,descricao_produto,preco_produto,acao=0):
     pyperclip.copy(nome_produto)
     print(pyperclip.paste())
     time.sleep(0.5)
-    atalhosPyautogui.colar(coordenadas['campo_nome_criar_produto'])
+    atalhosPyautogui.colar(coordenada_nome[0])
     #adiciona a descrição do produto
     pyperclip.copy(descricao_produto)
     time.sleep(0.5)
-    atalhosPyautogui.colar(coordenadas['campo_descricao_criar_produto'])
+    atalhosPyautogui.colar(coordenada_nome[1])
+
+#Função para clicar no botão de prosseguir para a próxima etapa da criação/edição do produto
 def prosseguirPagina():
     #Clica no botão de prosseguir
     atalhosPyautogui.clickar(coordenadas['btn_prosseguir_produto'])
-def adicionarPreco(preco_produto,desconto_produto):
+
+#Função para adicionar o preço do produto e o desconto
+def adicionarPreco(preco_produto,desconto_produto,acao=0,soma=0):
+    match acao:
+        case 0:
+            coordenada_nome = ['texto_nome_categoria_criar_produto']
+        case 1:
+            coordenada_nome = ['texto_nome_categoria_editar_produto_1']
+        case 2:
+            coordenada_nome = ['texto_nome_categoria_editar_produto_2']
     #Abre a seção de preço
     time.sleep(2)
     atalhosPyautogui.clickar(coordenadas['texto_nome_categoria_criar_produto'])
     #Dá respectivos tabs para chegar no preço
     for _ in range(2):
         pyautogui.press('tab')
-    match 
+    if soma == 1:
+        pyautogui.hotkey('ctrl', 'c')
+        valor_copiado = pyperclip.paste()
+        valor_copiado = float(valor_copiado.replace(",", "."))
+        preco_produto = 
+
     #Adiciona o preço
     pyperclip.copy(preco_produto)
     time.sleep(0.5)
@@ -66,6 +83,8 @@ def adicionarPreco(preco_produto,desconto_produto):
     pyautogui.press('tab')
     pyautogui.hotkey('ctrl', 'a')
     pyautogui.hotkey('ctrl', 'v')
+
+#Função para conferir se o preço do produto foi adicionado corretamente, para evitar erros de digitação, copiando o valor do campo de preço e comparando com o valor esperado
 def conferirPreco(preco_esperado="10,00",coordenada_preco_produto='campo_desconto_criar_produto'):
     atalhosPyautogui.copiar(coordenadas[coordenada_preco_produto])
     conteudo = pyperclip.paste()
@@ -73,9 +92,13 @@ def conferirPreco(preco_esperado="10,00",coordenada_preco_produto='campo_descont
         return True
     else:
         return False
+    
+#Função para clicar no botão de concluir a criação/edição do produto
 def finalizarProduto():
     #Clica no botão de concluir
     atalhosPyautogui.clickar(coordenadas['btn_concluir_produto'])
+
+#Função para validar qual ação o usuário deseja realizar, criar ou editar um produto, e se for editar, qual opção de edição escolher
 def validarAcao(tipo_operacao):
     match tipo_operacao:
         case 0:
