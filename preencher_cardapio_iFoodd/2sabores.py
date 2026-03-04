@@ -56,3 +56,4 @@ except Exception as e:
     pyautogui.alert(f"❌ ERRO:\n{str(e)}")
 
 keyboard.wait('q')
+#
