@@ -3,46 +3,55 @@ import time
 import pyperclip
 import keyboard
 import math
-
 pyautogui.PAUSE = 0.5
-
-def esperaCarregar():
-    pyautogui.moveTo(1537, 559, duration=0.1)
-    pyautogui.doubleClick()
-    print(pyautogui.position())
-    pyautogui.hotkey("ctrl", "c")
-    preco = pyperclip.paste()
-    if ',' not in preco:
-        time.sleep(5)
-        esperaCarregar()
-
-def esperaNome():
-    pyautogui.moveTo(1031, 663, duration=0.1)
-    pyautogui.click()
-    pyautogui.hotkey("ctrl", "a")
-    pyautogui.hotkey("ctrl", "c")
-    descricao = pyperclip.paste()
-    if len(descricao) > 500:
-        time.sleep(5)
-        esperaNome()
-
-def adiciona_item(item, descricao, preco, desconto):
-    pyautogui.press('home')
-    esperaCarregar()
-
-    # Clica em duplicar item
+def duplicar():
     pyautogui.moveTo(1662, 554, duration=0.1)
     pyautogui.click()
     for i in range(2):
         pyautogui.press('tab')
+        time.sleep(0.1)
     pyautogui.press('enter')
-
+    time.sleep(1.2)
     # Confirma duplicação
     pyautogui.moveTo(1138, 674, duration=0.1)
     pyautogui.click()
     time.sleep(7)
 
+def esperaCarregar(sucess=0, tentativas=5):
+    pyperclip.copy('')
+    pyautogui.moveTo(1537, 559, duration=0.1)
+    pyautogui.doubleClick()
+    print(pyautogui.position())  
+    pyautogui.hotkey("ctrl", "c")
+    preco = pyperclip.paste()
+    if preco != "10,00":
+        time.sleep(5)
+        esperaCarregar()
+    elif sucess < 2:
+        sucess += 1
+        esperaCarregar(sucess)
+def esperaNome(tentativa = 0):
+    pyautogui.moveTo(1031, 663, duration=0.1)
+    pyautogui.click()
+    if tentativa > 3:
+        esperaCarregar()
+        duplicar()
+        esperaNome()
+    pyperclip.copy('')
+    pyautogui.hotkey("ctrl", "a")
+    pyautogui.hotkey("ctrl", "c")
+    descricao = pyperclip.paste()
+    if descricao != 'Para criar combo':
+        time.sleep(5)
+        esperaNome(tentativa+1)
     
+def adiciona_item(item, descricao, preco, desconto):
+    pyautogui.press('home')
+    esperaCarregar()
+
+    # Clica em duplicar item
+    duplicar()
+
     esperaNome()
     pyperclip.copy(item)
     # Nome do item
@@ -65,8 +74,11 @@ def adiciona_item(item, descricao, preco, desconto):
 
     # Abre preço
     time.sleep(2)
-    pyautogui.moveTo(1236, 708, duration=0.1)
+    pyautogui.moveTo(568, 693, duration=0.1)
     pyautogui.click()
+    for _ in range(3):
+        pyautogui.press('tab')
+    pyautogui.press("enter")
 
     # Coloca preço e desconto
     pyautogui.moveTo(1289, 417, duration=0.1)
@@ -81,32 +93,37 @@ def adiciona_item(item, descricao, preco, desconto):
     # Salvar
     pyautogui.moveTo(1817, 994, duration=0.1)
     pyautogui.click()
-    time.sleep(30)
+    time.sleep(15)
 
 def criaCardapio():
-    pyautogui.hotkey("alt","tab")
-    with open('pizza.txt', 'r', encoding='utf-8') as arquivo:
-        linhas = arquivo.readlines()
+    try:
+        pyautogui.hotkey("alt","tab")
+        with open('pizza.txt', 'r', encoding='utf-8') as arquivo:
+            linhas = arquivo.readlines()
 
-    print("Iniciando")
-    for i, linha in enumerate(linhas, start=1):
-        nome, descricao, preco = linha.strip().split('|')
-        descricao = descricao.strip() +" Foto Ilustrativa"
-        # Corrige valores
-        #desconto_valor = float(desconto_txt) / 100      # 6390 → 63.90
-        #desconto_valor += 13.00                         # soma R$15,00
-        #preco_valor = desconto_valor * 2                # preço é o dobro
-        desconto_valor = math.floor((float(preco)*1))+0.9 
-        preco_valor = math.floor(desconto_valor/0.5)+0.9
-        item = f"{nome.strip()}"
+        print("Iniciando")
 
-        adiciona_item(
-            item,
-            descricao.strip(),
-            f"{preco_valor:.2f}".replace('.', ','),     # ex: "157,80"
-            f"{desconto_valor:.2f}".replace('.', ',')   # ex: "78,90"
-        )
+        for i, linha in enumerate(linhas, start=1):
+            nome, descricao = linha.strip().split('|')
+            descricao = descricao.strip() +" Foto Ilustrativa"
 
-    pyautogui.alert("Pronto")
+            desconto_valor = math.floor((float(54.90)))+0.9 
+            preco_valor = math.floor(desconto_valor/0.5)+0.9
+
+            item = f"Pizza {nome.strip()} - Média (6 Pedaços)"
+
+            adiciona_item(
+                item,
+                descricao.strip(),
+                f"{preco_valor:.2f}".replace('.', ','),
+                f"{desconto_valor:.2f}".replace('.', ',')
+            )
+
+        som_sucesso()
+        pyautogui.alert("✅ Cardápio finalizado com sucesso!")
+
+    except Exception as e:
+        som_erro()
+        pyautogui.alert(f"❌ ERRO:\n{str(e)}")
 
 criaCardapio()

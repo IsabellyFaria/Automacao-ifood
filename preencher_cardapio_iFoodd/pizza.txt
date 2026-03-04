@@ -1,10 +1,57 @@
-Porção Franguinho 500g | Porção de 500g de franguinho frito, preparado com cortes selecionados de frango, empanados na medida certa e fritos até ficarem dourados, crocantes por fora e macios por dentro. Ideal para compartilhar ou matar a fome com muito sabor. Acompanha o sabor clássico que todo mundo ama! | 59.90
-Porção Franguinho 1kg | Porção generosa de 1kg de franguinho frito, feito com cortes selecionados de frango, empanados na medida certa e fritos até ficarem bem dourados e super crocantes por fora, com interior macio e suculento. Ideal para compartilhar, servir a família ou acompanhar aquele momento especial. | 99.90 
-Porção Franguinho 300g + 1 Acompanhamento | Porção individual com 300g de franguinho frito, empanado na medida certa e frito até ficar crocante por fora e macio por dentro. Acompanha 1 acompanhamento à escolha, ideal para uma refeição prática, saborosa e na medida certa.| 54.90
-Porção Franguinho 300g + 2 Acompanhamentos | Porção de 300g de franguinho frito, feito com cortes selecionados, empanados e fritos até ficarem dourados e crocantes, acompanhado de 2 acompanhamentos à escolha. Ideal para compartilhar, serve até 2 pessoas. | 69.99
-Porção Franguinho 500g + 1 Acompanhamento | Porção com 500g de franguinho frito, feito com cortes selecionados, empanados na medida certa e fritos até ficarem dourados e crocantes por fora, mantendo o interior macio e suculento. Acompanha 1 acompanhamento à escolha, perfeita para compartilhar. 👉 Serve 2 pessoas. | 92.90
-Porção Franguinho 500g + 3 Acompanhamentos | Porção com 500g de franguinho frito, preparado com cortes selecionados de frango, empanados na medida certa e fritos até ficar bem crocante por fora e macio por dentro. Acompanha 3 acompanhamentos à escolha, ideal para compartilhar e montar uma refeição completa. 👉 Serve até 4 pessoas. | 119.90
-Porção Franguinho 1kg + 1 Acompanhamento | Porção generosa de 1kg de franguinho frito, feito com cortes selecionados, empanados na medida certa e fritos até ficarem dourados, crocantes por fora e macios por dentro. Acompanha 1 acompanhamento à escolha, ideal para compartilhar. | 130.90
-Porção Franguinho 1kg + 2  Acompanhamentos | Porção generosa de 1kg de franguinho frito, preparado com cortes selecionados, empanados na medida certa e fritos até ficarem bem crocantes e suculentos. Acompanha 2 acompanhamentos à escolha, perfeita para montar uma refeição completa. | 144.90
-Porção Franguinho 1kg + 3 Acompanhamentos | Porção generosa de 1kg de franguinho frito, empanado na medida certa e frito até ficar dourado, crocante por fora e macio por dentro. Acompanha 3 acompanhamentos à escolha, ideal para compartilhar com a família ou amigos. | 169.90
-
+Catupiry | Catupiry Original.
+Mussarela | Molho de tomate, mussarela, tomate, azeitonas e orégano.
+2 Queijos | Molho de tomate, mussarela, Catupiry, azeitonas e orégano.
+3 Queijos | Provolone, gorgonzola e parmesão.
+4 Queijos | Mussarela, provolone, Catupiry, parmesão, azeitonas e orégano.
+5 Queijos | Mussarela, provolone, Catupiry, parmesão e gorgonzola.
+ Marguerita | Molho de tomate, mussarela, tomate, parmesão ralado, manjericão, azeitonas e orégano.
+Napolitana | Mussarela, tomate e parmesão.
+Alho | Molho de tomate, mussarela, alho frito, azeitonas e orégano.
+Atum 1 | Molho de tomate, mussarela, atum, cebola, azeitonas e orégano.
+Atum 2 | Molho de tomate, atum, cebola, Catupiry, azeitonas e orégano.
+Atum 3 | Molho de tomate, atum, cebola, Catupiry, cheddar, azeitonas e orégano.
+CECAP | Molho de tomate, atum, palmito, cebola, Catupiry, azeitonas e orégano.
+Peruana | Atum, ovos, cebola e cobertura de mussarela.
+Americana | Molho de tomate, atum, palmito, cebola, ervilha, azeitonas e orégano.
+Bacon | Molho de tomate, mussarela, bacon, cebola, azeitonas e orégano.
+Siciliana | Champignon, bacon e mussarela.
+Portuguesa | Molho de tomate, mussarela, presunto, ervilha, ovos, cebola, azeitonas e orégano.
+Bauru | Molho de tomate, mussarela, presunto ralado, tomate, azeitonas e orégano.
+Labor | Presunto, palmito, ovos e mussarela.
+Moda Da Casa 1 | Presunto, palmito, ervilha e mussarela.
+Moda Da Casa 2 | Presunto, ervilha, palmito, ovos, bacon e mussarela.
+Napole | Presunto, palmito, ervilha e Catupiry.
+Calabresa | Molho de tomate, calabresa fatiada, cebola, azeitonas e orégano.
+Calabria | Molho de tomate, calabresa coberta com Catupiry, azeitonas e orégano.
+Carioca | Molho de tomate, calabresa fatiada, mussarela, azeitonas e orégano.
+Paulista | Calabresa e cheddar.
+Forneiro | Molho de tomate, calabresa, mussarela, bacon, azeitonas e orégano.
+Do Motoboy | Lombo,  bacon, calabresa, milho e mussarela.
+Imperial | Calabresa, palmito e mussarela.
+Jova Rural | Calabresa, mussarela, bacon e cheddar.
+Baiana 1  | Molho de tomate, calabresa moída, mussarela, pimenta, azeitonas e oréganos.
+Baiana 2 | Molho de tomate, calabresa moída, ovos cozidos, mussarela, pimenta, azeitonas e orégano.
+Toscana | Mussarela, calabresa moída, cebola e parmesão.
+Viena | Calabresa moída, cebola e Catupiry.
+Vila Nilo | Mussarela, calabresa moída, ovos e tomate.
+Frango | Molho de tomate, frango desfiado, requeijão cremoso Scalon, azeitonas e orégano.
+Caipira | Molho de tomate, mussarela, frango desfiado, milho, azeitonas e orégano.
+ABB | Molho de tomate, frango, milho, Catupiry, mussarela, azeitonas e orégano.
+Chic | Frango, milho, cheddar e bacon.
+Nova Galvão | Frango, bacon, palmito, milho e mussarela.
+Vitória | Mussarela, frango, ovos, ervilha, palmito, orégano e azeitonas.
+Brócolis | Molho de tomate, brócolis refogado  com alho, mussarela, rodelas de cebola, azeitonas e orégano.
+Brócolis 2 | Molho de tomate, brócolis refogado com alho, mussarela, bacon, azeitonas e orégano.
+Vila Galvão | Mussarela, brócolis, milho, tomate e bacon.
+Milho Verde | Molho de tomate, mussarela, milho verde, azeitonas e orégano.
+Palmito Com Mussarela | Molho de tomate, palmito, mussarela, azeitonas e orégano.
+Palmito Com Catupiry | Molho de tomate, palmito, Catupiry, azeitonas e orégano.
+Vegetariana | Escarola, milho, ervilha, palmito e cebola.
+Escarola | Escarola temperada, bacon e mussarela.
+Francesa 1 | Mussarela, champignon e mussarela.
+Francesa 2 | Lombo, palmito, ovos, ervilha, Catupiry e champignon.
+Lombo Com Mussarela | Lombo e mussarela.
+Lombo Com Catupiry | Lombo e Catupiry.
+La Itália | Lombo, palmito, bacon e mussarela.
+Pepperoni | Salame tipo pepperoni e mussarela.
+Peito de Peru | Peito de peru e mussarela.
