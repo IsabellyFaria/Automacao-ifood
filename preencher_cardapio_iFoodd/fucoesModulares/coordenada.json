@@ -83,12 +83,64 @@
     "x":1546,
     "y":650
   },
-  "":{
-    "x":,
-    "y":
+  "btn_confirmar_duplicar_lista":{
+    "x":1138,
+    "y":674
   },
-  "":{
-    "x":,
-    "y":
+  "campo_preco_lista":{
+    "x":1537,
+    "y": 0
   },
+  "campo_descricao_criar_produto": {
+    "x": 1031,
+    "y": 663
+  },
+  "campo_nome_criar_produto": {
+    "x": 677,
+    "y": 544
+  },
+  "btn_prosseguir_produto": {
+    "x": 1840,
+    "y": 986
+  },
+  "texto_nome_categoria_criar_produto": {
+    "x": 1236,
+    "y": 708
+  },
+  "campo_preco_criar_produto": {
+    "x": 1289,
+    "y": 417
+  },
+  "campo_desconto_criar_produto": {
+    "x": 1063,
+    "y": 688
+  },
+  "texto_nome_produto": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  },
+  "": {
+    "x": 0,
+    "y": 0
+  }
 }
