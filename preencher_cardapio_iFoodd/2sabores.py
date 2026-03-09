@@ -43,8 +43,8 @@ try:
     for i, linha in enumerate(linhas, start=1):
 
         linha = linha.split(' | ')
-        item = "Adicional " + linha[0].strip()
-        preco = f"{(float(linha[2])):.2f}"
+        item = "Salgado  " + linha[0].strip()
+        preco = f"{(float(0)):.2f}"
         descricao = linha[1] + " Foto Ilustrativa."
 
         adiciona_complemento(item, descricao, preco)

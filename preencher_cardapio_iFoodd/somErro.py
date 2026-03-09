@@ -1,4 +1,5 @@
 import winsound
+import time
 def som_erro():
     for _ in range(3):
         winsound.Beep(1000, 300)  # frequência, duração(ms)
