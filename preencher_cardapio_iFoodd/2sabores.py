@@ -3,6 +3,7 @@ import pyautogui
 import pyperclip
 import time
 import math
+import somErro
 pyautogui.PAUSE=0.6
 def adiciona_complemento(item, descricao,preco='0'):
     pyautogui.click(1426,495)
@@ -48,11 +49,11 @@ try:
 
         adiciona_complemento(item, descricao, preco)
 
-    som_sucesso()
+    somErro.som_sucesso()
     pyautogui.alert("✅ Complementos finalizados com sucesso!")
 
 except Exception as e:
-    som_erro()
+    somErro.som_erro()
     pyautogui.alert(f"❌ ERRO:\n{str(e)}")
 
 keyboard.wait('q')

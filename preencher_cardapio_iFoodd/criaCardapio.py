@@ -3,6 +3,7 @@ import time
 import pyperclip
 import keyboard
 import math
+import somErro
 pyautogui.PAUSE = 0.5
 def duplicar():
     pyautogui.moveTo(1662, 554, duration=0.1)
@@ -119,11 +120,11 @@ def criaCardapio():
                 f"{desconto_valor:.2f}".replace('.', ',')
             )
 
-        som_sucesso()
+        somErro.som_sucesso()
         pyautogui.alert("✅ Cardápio finalizado com sucesso!")
 
     except Exception as e:
-        som_erro()
+        somErro.som_erro()
         pyautogui.alert(f"❌ ERRO:\n{str(e)}")
 
 criaCardapio()
