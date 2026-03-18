@@ -5,9 +5,13 @@
 Isabelly Faria 21/01/2026
 """
 class Componente:
-    def __init__(self, coordenada):
-        self.coordenadaClique = coordenada
-        self.coordenadaValidacao = coordenada
+    def __init__(self, coordenadaClique, coordenadaValidacao=None):
+        """Base para componentes que têm uma coordenada de clique e uma coordenada de validação.
+
+        Para muitos casos ambos são iguais, então `coordenadaValidacao` é opcional.
+        """
+        self.coordenadaClique = coordenadaClique
+        self.coordenadaValidacao = coordenadaValidacao or coordenadaClique
     def clicar(self):
         pass
     def validar(self):

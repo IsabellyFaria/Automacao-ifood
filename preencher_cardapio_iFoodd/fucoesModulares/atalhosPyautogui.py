@@ -2,11 +2,13 @@
 * Dar preferência em usar e criar funções para manter a organização e limpeza do script
 Isabelly Faria - 20/01/2026"""
 import pyautogui
+import pyperclip
 import time
-def copiar(coordenada_click):
-    clickar(coordenada_click)
+def copiar(coordenada_click, qtd=1):
+    clickar(coordenada_click, qtd=qtd)
     pyautogui.hotKey('ctrl', 'a')
     pyautogui.hotKey('ctrl', 'c')
+    return pyperclip.paste()
 
 def clickar(coordenada_click, y=None, qtd=1, btn='left', duracao=0.1, retries=1, interval=0.1):
     """
@@ -48,8 +50,10 @@ def clickar(coordenada_click, y=None, qtd=1, btn='left', duracao=0.1, retries=1,
             else:
                 raise
 
-def colar(coordenada_click):
-    clickar(coordenada_click, duracao=0.3)
+def colar(coordenada_click, texto=None, qtd=1):
+    if texto is not None:
+        pyperclip.copy(texto)
+    clickar(coordenada_click, duracao=0.3, qtd=qtd)
     pyautogui.hotKey('ctrl', 'a')
     pyautogui.hotKey('ctrl', 'v')
 
