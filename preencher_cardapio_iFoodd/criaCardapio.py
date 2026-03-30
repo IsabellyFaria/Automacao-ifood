@@ -6,21 +6,22 @@ import math
 import somErro
 pyautogui.PAUSE = 0.5
 def duplicar():
-    pyautogui.moveTo(1662, 554, duration=0.1)
+    pyautogui.moveTo(1665, 533, duration=0.3)
     pyautogui.click()
     for i in range(2):
         pyautogui.press('tab')
         time.sleep(0.1)
     pyautogui.press('enter')
-    time.sleep(1.2)
+    time.sleep(4)
     # Confirma duplicação
-    pyautogui.moveTo(1138, 674, duration=0.1)
+    pyautogui.moveTo(1146, 643, duration=0.1)
     pyautogui.click()
     time.sleep(7)
 
 def esperaCarregar(sucess=0, tentativas=5):
+    pyautogui.press('home')
     pyperclip.copy('')
-    pyautogui.moveTo(1537, 559, duration=0.1)
+    pyautogui.moveTo(1518, 528, duration=0.1)
     pyautogui.doubleClick()
     print(pyautogui.position())  
     pyautogui.hotkey("ctrl", "c")
@@ -32,9 +33,15 @@ def esperaCarregar(sucess=0, tentativas=5):
         sucess += 1
         esperaCarregar(sucess)
 def esperaNome(tentativa = 0):
-    pyautogui.moveTo(1031, 663, duration=0.1)
+    pyautogui.moveTo(652, 664, duration=0.1)
     pyautogui.click()
+    
     if tentativa > 3:
+        pyautogui.moveTo(515, 222, duration=0.1)
+        pyautogui.click()
+        time.sleep(2)
+        pyautogui.moveTo(1099, 654, duration=0.1)
+        pyautogui.click()
         esperaCarregar()
         duplicar()
         esperaNome()
@@ -56,7 +63,7 @@ def adiciona_item(item, descricao, preco, desconto):
     esperaNome()
     pyperclip.copy(item)
     # Nome do item
-    pyautogui.moveTo(677, 544, duration=0.1)
+    pyautogui.moveTo(603, 544, duration=0.1)
     pyautogui.click()
     pyautogui.hotkey("ctrl", "v")
     time.sleep(1)
@@ -69,20 +76,20 @@ def adiciona_item(item, descricao, preco, desconto):
     pyautogui.hotkey("ctrl", "v")
 
     # Visível
-    pyautogui.moveTo(1840, 986, duration=0.1)
+    pyautogui.moveTo(1817, 979, duration=0.1)
     pyautogui.click()
     pyautogui.click()
 
     # Abre preço
     time.sleep(2)
-    pyautogui.moveTo(568, 693, duration=0.1)
+    pyautogui.moveTo(628, 696, duration=0.1)
     pyautogui.click()
     for _ in range(3):
         pyautogui.press('tab')
     pyautogui.press("enter")
 
     # Coloca preço e desconto
-    pyautogui.moveTo(1289, 417, duration=0.1)
+    pyautogui.moveTo(1283, 414, duration=0.1)
     pyautogui.click()
     pyautogui.typewrite(str(preco))
     pyautogui.press('tab')
@@ -106,12 +113,13 @@ def criaCardapio():
 
         for i, linha in enumerate(linhas, start=1):
             nome, descricao = linha.strip().split('|')
-            descricao = descricao.strip() +" Foto Ilustrativa"
-
-            desconto_valor = math.floor((float(54.90)))+0.9 
+            descricao = descricao.strip() +" Acompanha Guaraná Antarctica 2l. Foto Ilustrativa"
+            #desconto_valor = float(preco)
+            #preco.replace(",",".").strip()
+            desconto_valor = math.floor((float(69.90)+15))+0.9 
             preco_valor = math.floor(desconto_valor/0.5)+0.9
 
-            item = f"Pizza {nome.strip()} - Média (6 Pedaços)"
+            item = f"Pizza {nome.strip()} Gigante (8 Pedaços) + Guaraná Antarctica 2l"
 
             adiciona_item(
                 item,

@@ -1,57 +1,14 @@
-Catupiry | Catupiry Original.
-Mussarela | Molho de tomate, mussarela, tomate, azeitonas e orégano.
-2 Queijos | Molho de tomate, mussarela, Catupiry, azeitonas e orégano.
-3 Queijos | Provolone, gorgonzola e parmesão.
-4 Queijos | Mussarela, provolone, Catupiry, parmesão, azeitonas e orégano.
-5 Queijos | Mussarela, provolone, Catupiry, parmesão e gorgonzola.
- Marguerita | Molho de tomate, mussarela, tomate, parmesão ralado, manjericão, azeitonas e orégano.
-Napolitana | Mussarela, tomate e parmesão.
-Alho | Molho de tomate, mussarela, alho frito, azeitonas e orégano.
-Atum 1 | Molho de tomate, mussarela, atum, cebola, azeitonas e orégano.
-Atum 2 | Molho de tomate, atum, cebola, Catupiry, azeitonas e orégano.
-Atum 3 | Molho de tomate, atum, cebola, Catupiry, cheddar, azeitonas e orégano.
-CECAP | Molho de tomate, atum, palmito, cebola, Catupiry, azeitonas e orégano.
-Peruana | Atum, ovos, cebola e cobertura de mussarela.
-Americana | Molho de tomate, atum, palmito, cebola, ervilha, azeitonas e orégano.
-Bacon | Molho de tomate, mussarela, bacon, cebola, azeitonas e orégano.
-Siciliana | Champignon, bacon e mussarela.
-Portuguesa | Molho de tomate, mussarela, presunto, ervilha, ovos, cebola, azeitonas e orégano.
-Bauru | Molho de tomate, mussarela, presunto ralado, tomate, azeitonas e orégano.
-Labor | Presunto, palmito, ovos e mussarela.
-Moda Da Casa 1 | Presunto, palmito, ervilha e mussarela.
-Moda Da Casa 2 | Presunto, ervilha, palmito, ovos, bacon e mussarela.
-Napole | Presunto, palmito, ervilha e Catupiry.
-Calabresa | Molho de tomate, calabresa fatiada, cebola, azeitonas e orégano.
-Calabria | Molho de tomate, calabresa coberta com Catupiry, azeitonas e orégano.
-Carioca | Molho de tomate, calabresa fatiada, mussarela, azeitonas e orégano.
-Paulista | Calabresa e cheddar.
-Forneiro | Molho de tomate, calabresa, mussarela, bacon, azeitonas e orégano.
-Do Motoboy | Lombo,  bacon, calabresa, milho e mussarela.
-Imperial | Calabresa, palmito e mussarela.
-Jova Rural | Calabresa, mussarela, bacon e cheddar.
-Baiana 1  | Molho de tomate, calabresa moída, mussarela, pimenta, azeitonas e oréganos.
-Baiana 2 | Molho de tomate, calabresa moída, ovos cozidos, mussarela, pimenta, azeitonas e orégano.
-Toscana | Mussarela, calabresa moída, cebola e parmesão.
-Viena | Calabresa moída, cebola e Catupiry.
-Vila Nilo | Mussarela, calabresa moída, ovos e tomate.
-Frango | Molho de tomate, frango desfiado, requeijão cremoso Scalon, azeitonas e orégano.
-Caipira | Molho de tomate, mussarela, frango desfiado, milho, azeitonas e orégano.
-ABB | Molho de tomate, frango, milho, Catupiry, mussarela, azeitonas e orégano.
-Chic | Frango, milho, cheddar e bacon.
-Nova Galvão | Frango, bacon, palmito, milho e mussarela.
-Vitória | Mussarela, frango, ovos, ervilha, palmito, orégano e azeitonas.
-Brócolis | Molho de tomate, brócolis refogado  com alho, mussarela, rodelas de cebola, azeitonas e orégano.
-Brócolis 2 | Molho de tomate, brócolis refogado com alho, mussarela, bacon, azeitonas e orégano.
-Vila Galvão | Mussarela, brócolis, milho, tomate e bacon.
-Milho Verde | Molho de tomate, mussarela, milho verde, azeitonas e orégano.
-Palmito Com Mussarela | Molho de tomate, palmito, mussarela, azeitonas e orégano.
-Palmito Com Catupiry | Molho de tomate, palmito, Catupiry, azeitonas e orégano.
-Vegetariana | Escarola, milho, ervilha, palmito e cebola.
-Escarola | Escarola temperada, bacon e mussarela.
-Francesa 1 | Mussarela, champignon e mussarela.
-Francesa 2 | Lombo, palmito, ovos, ervilha, Catupiry e champignon.
-Lombo Com Mussarela | Lombo e mussarela.
-Lombo Com Catupiry | Lombo e Catupiry.
-La Itália | Lombo, palmito, bacon e mussarela.
-Pepperoni | Salame tipo pepperoni e mussarela.
-Peito de Peru | Peito de peru e mussarela.
+Carne Seca Com Cheddar | Molho, mussarela, carne seca, cebola, orégano e cheddar. 
+4 Carnes | Molho, calabresa, lombo, presunto, bacon, cebola, mussarela e orégano.
+A Moda | Molho, azeitona, calabresa, cebola, orégano, pimentão, presunto, milho, tomate e mussarela. 
+Atum | Molho, atum, orégano e mussarela. 
+Palmito | Molho à Bolonhesa, orégano, palmito e mussarela.
+Portuguesa | Molho, presunto, bacon, milho, tomate, calabresa, cebola, orégano, ovos e mussarela.  
+Pepperoni | Molho, mussarela, pepperoni, cebola e bacon.
+Salaminho | Molho, salaminho, orégano e mussarela. 
+Vegetariana | Milho, palmito, champignon, tomate, cebola, pimentão, azeitona, orégano e mussarela. 
+Bacon | Mussarela, bacon e orégano.
+Bacon Com Milho | Mussarela, bacon, milho, molho e orégano.
+Calabresa Com Barbecue | Molho, mussarela, calabresa e molho Barbecue.
+Frango com Palmito | Molho, mussarela, frango, palmito, molho à Bolonhesa e orégano.
+Americana | Mussarela, molho, frango, bacon e cheddar.
