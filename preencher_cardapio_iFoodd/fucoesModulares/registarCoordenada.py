@@ -18,7 +18,7 @@ def validarExecucao(gabarito,campo, coordenadas_click){
     if gabarito.strip() != campo_preenchido.strip():
         alertas.problema()
         #AVISA O FRONT
-          # avisa o Electron
+        # avisa o Electron
         conexao.setInformacao(mensagem = "ERRO_VALIDACAO_CAMPO")
         # aguarda liberação do JS
         aguardarConfirmacaoJS()
