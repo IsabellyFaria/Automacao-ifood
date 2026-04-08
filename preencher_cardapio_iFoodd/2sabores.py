@@ -6,14 +6,18 @@ import math
 import somErro
 pyautogui.PAUSE=0.6
 def adiciona_complemento(item, descricao,preco='0'):
+    #Clica em "Criar Novo Complemento"
     pyautogui.click(1426,495)
     time.sleep(3)
+    #Clica Em "Selecione o Tipo"
     pyautogui.moveTo(1309,558,duration=0.2)
     pyautogui.click()
     time.sleep(0.4)
+    #Clica em "Preparado"
     pyautogui.moveTo(1352,460,duration=0.3)
     pyautogui.click()
     time.sleep(1)
+    #Clica no Campo de Nome do Produto
     pyautogui.moveTo(1352, 603, duration=0.4)  # move lentamente
     pyautogui.click()
     pyperclip.copy(item)

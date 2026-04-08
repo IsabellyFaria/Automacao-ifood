@@ -6,6 +6,7 @@ import math
 import somErro
 pyautogui.PAUSE = 0.5
 def duplicar(): 
+    #Clica nas 3 bolinhas do 1º item
     pyautogui.moveTo(1662, 554, duration=0.1)
     pyautogui.click()
     for i in range(2):
@@ -13,7 +14,7 @@ def duplicar():
         time.sleep(0.1)
     pyautogui.press('enter')
     time.sleep(4)
-    # Confirma duplicação
+    # Confirma duplicação (Botão confirmar duplicação)
     pyautogui.moveTo(1146, 643, duration=0.1)
     pyautogui.click()
     time.sleep(7)
@@ -21,6 +22,7 @@ def duplicar():
 def esperaCarregar(sucess=0, tentativas=5):
     pyautogui.press('home')
     pyperclip.copy('')
+    # Clica no preço do 1º item
     pyautogui.moveTo(1518, 528, duration=0.1)
     pyautogui.doubleClick()
     print(pyautogui.position())  
@@ -33,13 +35,16 @@ def esperaCarregar(sucess=0, tentativas=5):
         sucess += 1
         esperaCarregar(sucess)
 def esperaNome(tentativa = 0):
+    # Clica no nome do 1º item
     pyautogui.moveTo(652, 664, duration=0.1)
     pyautogui.click()
     
     if tentativa > 3:
+        #Clica em (Cadápio), no canto superior esquerdo
         pyautogui.moveTo(515, 222, duration=0.1)
         pyautogui.click()
         time.sleep(2)
+        #Confirmar que deseja sair da criação
         pyautogui.moveTo(1099, 654, duration=0.1)
         pyautogui.click()
         esperaCarregar()
@@ -62,7 +67,7 @@ def adiciona_item(item, descricao, preco, desconto):
 
     esperaNome()
     pyperclip.copy(item)
-    # Nome do item
+    # Clica no nome do item
     pyautogui.moveTo(603, 544, duration=0.1)
     pyautogui.click()
     pyautogui.hotkey("ctrl", "v")
@@ -75,20 +80,21 @@ def adiciona_item(item, descricao, preco, desconto):
     pyperclip.copy(descricao)
     pyautogui.hotkey("ctrl", "v")
 
-    # Visível
+    # Clicar em "Prosseguir"
     pyautogui.moveTo(1817, 979, duration=0.1)
     pyautogui.click()
     pyautogui.click()
 
     # Abre preço
     time.sleep(2)
+    #Clicar no Nome da categoria (Na linha do preço)
     pyautogui.moveTo(628, 696, duration=0.1)
     pyautogui.click()
     for _ in range(3):
         pyautogui.press('tab')
     pyautogui.press("enter")
 
-    # Coloca preço e desconto
+    # Clica no primeiro campo
     pyautogui.moveTo(1283, 414, duration=0.1)
     pyautogui.click()
     pyautogui.typewrite(str(preco))
@@ -98,7 +104,7 @@ def adiciona_item(item, descricao, preco, desconto):
         pyautogui.press('tab')
     pyautogui.press('enter')
 
-    # Salvar
+    # Clica em Salvar
     pyautogui.moveTo(1817, 994, duration=0.1)
     pyautogui.click()
     time.sleep(15)
