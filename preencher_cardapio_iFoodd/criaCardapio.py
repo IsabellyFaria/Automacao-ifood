@@ -5,8 +5,8 @@ import keyboard
 import math
 import somErro
 pyautogui.PAUSE = 0.5
-def duplicar():
-    pyautogui.moveTo(1665, 533, duration=0.3)
+def duplicar(): 
+    pyautogui.moveTo(1662, 554, duration=0.1)
     pyautogui.click()
     for i in range(2):
         pyautogui.press('tab')

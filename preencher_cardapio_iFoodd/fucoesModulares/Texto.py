@@ -1,20 +1,30 @@
-""" Classe herdeira de componente, tem propósito de reger o comportamento dos blocos de texto, afim de padronizar e facilitar a construção do código principal.
-* Tem a função de clicar e validar um blocos de texto, ou seja, clicar na coordenada pré-definida e validar se o clique foi bem sucedido, copiando alguma informação e verificando se a informação copiada é a esperada.
-Isabelly Faria 21/01/2026
-"""
-import atalhosPyautogui
 import pyperclip
+import atalhosPyautogui
+
 from Componente import Componente
 
+
 class Texto(Componente):
-    def __init__(self, coordenadaClique, coordenadaValidacao=None, textoValidacao=None):
-        """Texto usa coordenada de clique e (opcional) coordenada de validação."""
-        super().__init__(coordenadaClique, coordenadaValidacao)
-        self.textoValidacao = textoValidacao
+    """
+    Representa um bloco de texto da tela.
+
+    Normalmente é usado para copiar/ler e validar.
+    """
+
+    def __init__(self, coordenada_clique, coordenada_validacao=None, texto_validacao=None):
+        super().__init__(coordenada_clique, coordenada_validacao)
+        self.texto_validacao = texto_validacao
 
     def clicar(self):
-        atalhosPyautogui.copiar(self.coordenadaClique,qtd=3)
+        atalhosPyautogui.copiar(self.coordenada_clique, qtd=3)
+
+    def obter_texto(self):
+        atalhosPyautogui.copiar(self.coordenada_validacao, qtd=3)
+        return pyperclip.paste()
 
     def validar(self):
-        texto_copiado =self.clicar()
-        return texto_copiado == self.textoValidacao
+        if self.texto_validacao is None:
+            return True
+
+        texto_copiado = self.obter_texto()
+        return texto_copiado == self.texto_validacao

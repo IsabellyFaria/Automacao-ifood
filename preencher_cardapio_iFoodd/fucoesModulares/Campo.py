@@ -1,23 +1,46 @@
-""" Classe herdeira de componente, tem propósito de reger o comportamento dos campos de texto, afim de padronizar e facilitar a construção do código principal.
-* Tem a função de clicar e validar um campo de texto, ou seja, clicar na coordenada pré-definida e validar se o clique foi bem sucedido, copiando alguma informação e verificando se a informação copiada é a esperada.
-Isabelly Faria 21/01/2026
-"""
-import atalhosPyautogui
 import pyperclip
+import atalhosPyautogui
+
 from Componente import Componente
 
+
 class Campo(Componente):
-    def __init__(self, coordenadaClique, coordenadaValidacao=None, textoValidacao=None, textoInserido=None):
-        """Campo usa coordenada de clique e (opcional) coordenada de validação."""
-        super().__init__(coordenadaClique, coordenadaValidacao)
-        self.textoValidacao = textoValidacao
-        self.textoInserido = textoInserido
+    """
+    Representa um campo editável.
+
+    Pode:
+    - clicar no campo
+    - preencher o campo
+    - validar o texto preenchido
+    """
+
+    def __init__(
+        self,
+        coordenada_clique,
+        coordenada_validacao=None,
+        texto_validacao=None,
+        texto_inserido=None
+    ):
+        super().__init__(coordenada_clique, coordenada_validacao)
+        self.texto_validacao = texto_validacao
+        self.texto_inserido = texto_inserido
 
     def clicar(self):
-        atalhosPyautogui.clickar(self.coordenadaClique, texto=self.textoInserido)
-        pass
+        atalhosPyautogui.clickar(self.coordenada_clique)
+
+    def preencher(self, texto=None):
+        texto_final = self.texto_inserido if texto is None else texto
+
+        if texto_final is None:
+            return
+
+        pyperclip.copy(str(texto_final))
+        atalhosPyautogui.colar(self.coordenada_clique)
 
     def validar(self):
-        atalhosPyautogui.colar(self.coordenadaValidacao)
+        if self.texto_validacao is None:
+            return True
+
+        atalhosPyautogui.copiar(self.coordenada_validacao)
         texto_copiado = pyperclip.paste()
-        return texto_copiado == self.textoValidacao
+        return texto_copiado == self.texto_validacao
